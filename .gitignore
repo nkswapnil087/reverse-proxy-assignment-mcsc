@@ -1,0 +1,20 @@
+.env
+__pycache__/
+*.py[cod]
+
+# Runtime state and logs
+logs/
+run/
+*.pid
+*.sock
+*.sock.lock
+
+# Local database data and extracted/local binaries
+mysql-local/
+local-nginx/
+downloads/
+database/*.db
+
+# Editor and OS files
+.DS_Store
+.vscode/

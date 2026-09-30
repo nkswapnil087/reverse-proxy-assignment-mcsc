@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS reverse_proxy_assignment
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE reverse_proxy_assignment;
+
+CREATE TABLE IF NOT EXISTS requests (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    path VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB;
